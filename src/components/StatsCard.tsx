@@ -1,5 +1,4 @@
-// frontend/components/StatsCard.tsx
-import styles from "./StatsCard.module.scss";
+
 
 export default function StatsCard({
   title,
