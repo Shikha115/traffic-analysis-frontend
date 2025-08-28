@@ -34,7 +34,10 @@ export default function Home() {
           <div className="space-y-10">
             {/* 📊 Overview Stats */}
             <section>
-              <h2 className="text-xl font-semibold mb-3">Overview</h2>
+              <h2 className="text-xl font-semibold mb-3">
+                {data.Title ? data.Title : "Overview"}
+              </h2>
+              {data.Description && <p className="mb-3">{data.Description}</p>}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <StatsCard
                   title="Visits (est.)"
